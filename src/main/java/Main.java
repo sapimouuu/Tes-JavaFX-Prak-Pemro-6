@@ -29,7 +29,7 @@ public class Main extends Application {
     public void start(Stage stage) {
         Scene scene = new Scene(new Group());
         stage.setTitle("Table View Sample");
-        stage.setWidth(300);
+        stage.setWidth(450);
         stage.setHeight(500);
 
         final Label label = new Label("Data Mahasiswa");
@@ -37,23 +37,23 @@ public class Main extends Application {
 
         table.setEditable(true);
 
-        TableColumn firstNameCol = new TableColumn("ID");
-        firstNameCol.setMinWidth(100);
-        firstNameCol.setCellValueFactory(
-                new PropertyValueFactory<Mahasiswa, Integer>("firstName"));
+        TableColumn idCol = new TableColumn("ID");
+        idCol.setMinWidth(100);
+        idCol.setCellValueFactory(
+                new PropertyValueFactory<Mahasiswa, Integer>("id"));
 
-        TableColumn lastNameCol = new TableColumn("ID");
-        lastNameCol.setMinWidth(100);
-        lastNameCol.setCellValueFactory(
-                new PropertyValueFactory<Mahasiswa, String>("Nama"));
+        TableColumn nameCol = new TableColumn("Nama");
+        nameCol.setMinWidth(100);
+        nameCol.setCellValueFactory(
+                new PropertyValueFactory<Mahasiswa, String>("nama"));
 
-        TableColumn emailCol = new TableColumn("NIM");
-        emailCol.setMinWidth(200);
-        emailCol.setCellValueFactory(
-                new PropertyValueFactory<Mahasiswa, String>("NIM"));
+        TableColumn nimCol = new TableColumn("NIM");
+        nimCol.setMinWidth(200);
+        nimCol.setCellValueFactory(
+                new PropertyValueFactory<Mahasiswa, String>("nimnoono"));
 
         table.setItems(data);
-        table.getColumns().addAll(firstNameCol, lastNameCol, emailCol);
+        table.getColumns().addAll(idCol, nameCol, nimCol);
 
         final VBox vbox = new VBox();
         vbox.setSpacing(5);
