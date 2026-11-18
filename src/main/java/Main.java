@@ -50,7 +50,7 @@ public class Main extends Application {
         TableColumn nimCol = new TableColumn("NIM");
         nimCol.setMinWidth(200);
         nimCol.setCellValueFactory(
-                new PropertyValueFactory<Mahasiswa, String>("nimnoono"));
+                new PropertyValueFactory<Mahasiswa, String>("nim"));
 
         table.setItems(data);
         table.getColumns().addAll(idCol, nameCol, nimCol);
