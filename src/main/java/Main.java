@@ -23,7 +23,7 @@ public class Main extends Application {
             new Mahasiswa(107, "Yu Ji-min", "1608257007"),
             new Mahasiswa(108, "Uchinaga Aeri", "1608257008"),
             new Mahasiswa(109, "Kim Min-jeong", "1608257009"),
-            new Mahasiswa(110, "Ning Yizhuo", "16082570010")
+            new Mahasiswa(110, "Ning Yizhuo", "1608257010")
     );
 
     private TableView table = new TableView();
