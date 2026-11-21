@@ -1,3 +1,5 @@
+package com.example.praktikum6;
+
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
