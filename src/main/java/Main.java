@@ -13,11 +13,17 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-
     final ObservableList<Mahasiswa> data = FXCollections.observableArrayList(
-            new Mahasiswa(01, "Na Jaemin", "13082000"),
-            new Mahasiswa(02, "Lee Jeno", "17082000"),
-            new Mahasiswa(03, "Lee Haechan", "15052000")
+            new Mahasiswa(101, "Huang Renjun", "1608257001"),
+            new Mahasiswa(102, "Lee Je-no", "1608257002"),
+            new Mahasiswa(103, "Lee Haechan", "1608257003"),
+            new Mahasiswa(104, "Na Jaemin", "1608257004"),
+            new Mahasiswa(105, "Zhong Chenle", "1608257005"),
+            new Mahasiswa(106, "Park Jisung", "1608257006"),
+            new Mahasiswa(107, "Yu Ji-min", "1608257007"),
+            new Mahasiswa(108, "Uchinaga Aeri", "1608257008"),
+            new Mahasiswa(109, "Kim Min-jeong", "1608257009"),
+            new Mahasiswa(110, "Ning Yizhuo", "16082570010")
     );
 
     private TableView table = new TableView();
